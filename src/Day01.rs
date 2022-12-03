@@ -34,12 +34,16 @@ mod tests {
     const SAMPLE: &str = include_str!("../samples/01.txt");
 
     #[test]
-    fn sample_part1() {
-        assert_eq!(part_one(SAMPLE).unwrap(), 24000);
+    fn sample_part_one() {
+        let value = part_one(SAMPLE).unwrap();
+        println!("Sample 1: {}", value);
+        assert_eq!(value, 24000);
     }
 
     #[test]
-    fn sample_part2() {
-        assert_eq!(part_two(SAMPLE).unwrap(), 45000);
+    fn sample_part_two() {
+        let value = part_two(SAMPLE).unwrap();
+        println!("Sample 2: {}", value);
+        assert_eq!(value, 45000);
     }
 }

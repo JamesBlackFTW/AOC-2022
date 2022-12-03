@@ -86,13 +86,11 @@ fn calculate_strategy_score(input: &str) -> Result<i32, i32> {
 pub fn part_one(input: &str) -> Result<i32, i32> {
 
     let mut result = input.lines().map(|line| calculate_score(line).unwrap()).sum();
-    println!("Overall {0}", result);
     Ok(result)
 }
 
 pub fn part_two(input: &str) -> Result<i32, i32> {
     let mut result = input.lines().map(|line| calculate_strategy_score(line).unwrap()).sum();
-    println!("Overall {0}", result);
     Ok(result)
 }
 
@@ -109,12 +107,16 @@ mod tests {
     const SAMPLE: &str = include_str!("../samples/02.txt");
 
     #[test]
-    fn sample_part1() {
-        assert_eq!(part_one(SAMPLE).unwrap(), 15);
+    fn sample_part_one() {
+        let value = part_one(SAMPLE).unwrap();
+        println!("Sample 1: {}", value);
+        assert_eq!(value, 15);
     }
 
     #[test]
-    fn sample_part2() {
-        assert_eq!(part_two(SAMPLE).unwrap(), 12);
+    fn sample_part_two() {
+        let value = part_two(SAMPLE).unwrap();
+        println!("Sample 2: {}", value);
+        assert_eq!(value, 12);
     }
 }
