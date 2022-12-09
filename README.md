@@ -8,3 +8,4 @@ A dotnet developer gets awfully rusty.
  + Day 3: Rucksack Reorganization
  + Day 4: Camp Cleanup
  + Day 5: Supply Stacks
+ + Day 6: Tuning Trouble

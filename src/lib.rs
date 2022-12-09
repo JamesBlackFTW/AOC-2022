@@ -3,6 +3,7 @@ mod Day02;
 mod Day03;
 mod Day04;
 mod Day05;
+mod Day06;
 
 pub fn run(day: &i32 ) {
     match day {
@@ -11,6 +12,7 @@ pub fn run(day: &i32 ) {
         3 => Day03::run_all(),
         4 => Day04::run_all(),
         5 => Day05::run_all(),
+        6 => Day06::run_all(),
         _ => println!("Could not find solution for Day {}", day)
     }
 }
